@@ -1,0 +1,343 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.main {
+  background-image: url("images/bg-image.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 844px;
+  position: relative;
+}
+
+.main .box {
+  background-color: black;
+  opacity: 0.75;
+  height: 844px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.main nav {
+  width: 80.5vw;
+  max-width: 100%;
+  height: 90px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav span img {
+  width: 150px;
+  color: red;
+  position: relative;
+  z-index: 10;
+}
+
+nav div button {
+  position: relative;
+  z-index: 10;
+}
+
+.hero {
+  height: 70%;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+.main .hero .one {
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  font-size: 54px;
+  font-weight: 900;
+  width: 39%;
+  text-align: center;
+}
+
+.main .hero .two {
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  width: 39%;
+  text-align: center;
+}
+
+.main .hero .three {
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  width: 50%;
+  text-align: center;
+  margin: 30px 0px;
+}
+
+.hero .email-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 30px;
+}
+
+.hero .email-input input {
+  width: 366px;
+  height: 56px;
+  background-color: rgba(128, 128, 128, 0.121);
+  border: 1px solid white;
+  border-radius: 2px;
+  padding: 0px 20px;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  margin: 0px 3px;
+}
+
+.hero .email-input button {
+  width: 213px;
+  height: 56px;
+  background-color: rgb(244, 33, 18);
+  font-size: 24px;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  font-weight: 600;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  margin: 0px 3px;
+}
+
+.curved-line {
+  width: 100%; /* Line width */
+  max-width: 100%;
+  height: 4px; /* Thickness of the line */
+
+  /* Smooth gradient effect with red in the middle */
+  background: linear-gradient(to right, black, red, black);
+  z-index: 10;
+  /* Blue shadow only below the line */
+  box-shadow: 0 8px 15px 1px rgba(0, 0, 255, 0.8),
+    /* Blue shadow directly below the line */ 0 14px 35px 1px
+      rgba(0, 0, 255, 0.5),
+    /* Gradual blue shadow fading out */ 0 20px 55px 1px rgba(0, 0, 255, 0.3); /* Softer blue shadow at the bottom */
+
+  position: relative;
+  margin: -5px 0; /* Adjust margin as needed */
+
+  /* Curved corners */
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  border-bottom: none;
+}
+
+
+.second-main {
+  height: 600px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  position: relative;
+}
+
+.second-main > :first-child {
+  font-size: 24px;
+  color: white;
+  position: absolute;
+  top: 50px;
+  left: 150px;
+  margin: 0px 0px;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+
+.second-main .btn1 {
+  position: absolute;
+  top: 100px;
+  left: 150px;
+  width: 60px;
+  height: 40px;
+  background-color: rgba(50, 49, 49, 0.332);
+  color: white;
+
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,   sans-serif;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.second-main .btn2 {
+  position: absolute;
+  top: 100px;
+  left: 220px;
+  width: 60px;
+  height: 40px;
+  background-color: rgba(50, 49, 49, 0.332);
+  color: white;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,    sans-serif;
+  
+  border: 1px solid white;
+  border-radius: 3px;
+}
+
+.second-main .suggestions{
+  width: 80vw;
+  height: 300px;
+  position: absolute;
+  top: 200px;
+  left: 150px;
+  display: flex;
+  gap: 40px;
+  /* overflow-x: scroll; */
+}
+
+.second-main .suggestions img{
+  border-radius: 10px;
+}
+
+
+.bg{
+  background-color: black;
+  height: 300px;
+}
+.footer{
+  margin: auto;
+  width: 80vw;
+}
+.footer .grid{
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 40px 40px 40px 40px;
+  margin: auto;
+  width: 80vw;
+}
+
+.footer a{
+  color: white;
+  text-decoration: underline;
+
+}
+
+.Netflix{
+  font-size: 16px;
+  color: rgb(203, 203, 203);
+  margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .main {
+    height: auto; /* Adjust height for smaller screens */
+    background-size: cover;
+  }
+
+  .main nav {
+    width: 90%; /* Use more of the screen */
+    height: auto; /* Reduce height */
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  nav span img {
+    width: 120px; /* Shrink logo */
+  }
+
+  nav div button {
+    font-size: 14px; /* Smaller buttons */
+  }
+
+  .hero {
+    font-size: 1.5rem;
+    padding: 20px;
+  }
+
+  .main .hero .one,
+  .main .hero .two,
+  .main .hero .three {
+    width: 90%; /* Use full width */
+    font-size: 1.2rem;
+  }
+
+  .hero .email-input input {
+    width: 80%; /* Adjust input width */
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav span img {
+    width: 100px; /* Further shrink logo for small screens */
+  }
+
+  .main nav {
+    width: 95%;
+  }
+
+  .hero {
+    font-size: 1rem;
+    gap: 5px; /* Reduce gaps */
+  }
+
+  .main .hero .one {
+    font-size: 24px; /* Smaller headline */
+  }
+
+  .main .hero .two {
+    font-size: 18px;
+  }
+
+  .main .hero .three {
+    font-size: 14px;
+  }
+
+  .hero .email-input input {
+    width: 90%;
+    height: 35px;
+  }
+}
